@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-Regular.otf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-RegularItalic.otf') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-Bold.otf') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-BoldItalic.otf') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-Black.otf') format('woff2');
+    font-weight: 1200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFPro';
+    src: url('../resources/fonts/SF-Pro-Display-BlackItalic.otf') format('woff2');
+    font-weight: 1200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LinhAvantgarde';
+    src: url('../resources/fonts/LINH\ AVANTGARDE\ REGULAR.TTF') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LinhAvantgarde';
+    src: url('../resources/fonts/LINH\ AVANTGARDE\ BOLD.TTF') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    z-index: 101;
+}
+  
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #10B6CC;;
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Averta', sans-serif;
+}
