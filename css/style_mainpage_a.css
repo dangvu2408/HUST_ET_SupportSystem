@@ -71,7 +71,7 @@
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #10B6CC;;
+    background-color: #001B4C;;
     border-radius: 20px;
 }
 
@@ -79,6 +79,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'SFPro Regular', sans-serif;
+    position: relative;
 }
 
 a {
@@ -88,20 +89,122 @@ p {
     margin: 0;
 }
 
+button {
+    font-family: 'SFPro Bold';
+}
+
 header {
     background-color: #001B4C;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .12);
     display: flex;
 }
 
-.top-section {
+#hess-header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    top: 0;
+    z-index: 1;
+}
+
+.left-section {
     display: flex;
     align-items: center;
+    margin-left: 50px;
     .logo {
-        margin: 10px 10px 10px 50px;
+        margin: 10px;
     }
 
     .title {
         margin: 20px;
+    }
+}
+
+.right-header-section {
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-login-header {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    margin-left: 3px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#main {
+    margin-top: -100px;
+}
+
+.banner {
+    width: 100%;
+}
+
+#hess-footer {
+    margin: 0;
+    padding: 10px 100px;
+    background-color: #F2F6FC;
+
+    .footer-container {
+        padding-top: 48px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+.footer-row {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 0;
+    padding: 10px;
+}
+
+.footer-left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .footer-logo-seee {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .text-slogan {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .text-modile {
+                font-family: 'LinhAvantgarde Bold';
+                font-size: 24px;
+                color: #AA1D2B;
+            }
+            .text-sub-slogan {
+                font-family: 'LinhAvantgarde SemiBold';
+                font-size: 20px;
+                color: #AA1D2B;
+            }
+        }
+    }
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    .item-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .content-info {
+            font-family: 'SFPro Bold';
+            font-size: 18px;
+        }
     }
 }
