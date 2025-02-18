@@ -1,40 +1,40 @@
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Regular';
     src: url('../resources/fonts/SF-Pro-Display-Regular.otf') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Regular Italic';
     src: url('../resources/fonts/SF-Pro-Display-RegularItalic.otf') format('woff2');
     font-weight: 500;
     font-style: italic;
 }
   
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Bold';
     src: url('../resources/fonts/SF-Pro-Display-Bold.otf') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Bold Italic';
     src: url('../resources/fonts/SF-Pro-Display-BoldItalic.otf') format('woff2');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Black';
     src: url('../resources/fonts/SF-Pro-Display-Black.otf') format('woff2');
     font-weight: 1200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SFPro';
+    font-family: 'SFPro Black Italic';
     src: url('../resources/fonts/SF-Pro-Display-BlackItalic.otf') format('woff2');
     font-weight: 1200;
     font-style: italic;
@@ -48,9 +48,16 @@
 }
 
 @font-face {
-    font-family: 'LinhAvantgarde';
-    src: url('../resources/fonts/LINH\ AVANTGARDE\ BOLD.TTF') format('woff2');
+    font-family: 'LinhAvantgarde SemiBold';
+    src: url('../resources/fonts/LINH\ AVANTGARDE\ DEMIBOLD.TTF') format('woff2');
     font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LinhAvantgarde Bold';
+    src: url('../resources/fonts/LINH\ AVANTGARDE\ BOLD.TTF') format('woff2');
+    font-weight: 1200;
     font-style: normal;
 }
 
@@ -71,5 +78,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Averta', sans-serif;
+    font-family: 'SFPro Regular', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+
+header {
+    background-color: #001B4C;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .12);
+    display: flex;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    .logo {
+        margin: 10px 10px 10px 50px;
+    }
+
+    .title {
+        margin: 20px;
+    }
 }
