@@ -85,6 +85,7 @@ body {
 a {
     text-decoration: none;
 }
+
 p {
     margin: 0;
 }
@@ -136,7 +137,7 @@ header {
     margin-left: 3px;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #main {
@@ -172,6 +173,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 0 0 75%;
+    max-width: 75%;
     .footer-logo-seee {
         display: flex;
         gap: 20px;
@@ -206,5 +209,44 @@ header {
             font-family: 'SFPro Bold';
             font-size: 18px;
         }
+    }
+}
+
+.footer-right-col {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 25%;
+    max-width: 25%;
+    .column-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        .title-column-panel {
+            font-size: 20px;
+            font-family: 'LinhAvantgarde Bold';
+            color: #000;
+        }
+        .column-panel-divider {
+            margin-top: 10px;
+            width: 100%;
+            height: 3px;
+            background-color: #CE1628;
+        }
+    }
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid #CCCCCC;
+    .copyright-bottom {
+        font-size: 17px;
+        font-family: 'SFPro Regular';
+        color: #646a7c;
+        text-align: justify;
+        padding-right: 20px;
     }
 }
