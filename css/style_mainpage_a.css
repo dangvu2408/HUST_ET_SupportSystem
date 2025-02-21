@@ -67,7 +67,7 @@
 }
   
 ::-webkit-scrollbar-track {
-    background: white;
+    background: transparent;
 }
   
 ::-webkit-scrollbar-thumb {
@@ -76,10 +76,13 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'SFPro Regular', sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 a {
@@ -92,6 +95,7 @@ p {
 
 button {
     font-family: 'SFPro Bold';
+    cursor: pointer;
 }
 
 header {
@@ -100,13 +104,20 @@ header {
     display: flex;
 }
 
+.page-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #hess-header {
     position: sticky;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .left-section {
@@ -140,12 +151,139 @@ header {
     font-size: 17px;
 }
 
-#main {
+
+
+.container {
+    width: 100%;
     margin-top: -100px;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+}
+
+.banner-page {
+    position: relative;
+}
+
+.about-page {
+    padding-top: 48px;
+    position: relative;
+    
+}
+
+.toplist-title {
+    font-size: 25px;
+    font-family: 'SFPro Bold';
+    font-weight: 400;
+    line-height: 36.05px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+}
+
+.columns-listcourse {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 20px;
+}
+
+.single-column {
+    flex-shrink: 0;
+    position: relative;
+    min-height: 1px;
+    border-radius: 15px;
+    background-color: #E0ECFF;
+}
+
+.image-course-course1 {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 15px 15px 0px 0px;
+    background: url(/resources/images/dts_banner.png);
+    background-size: 100%;
+}
+
+.image-course-course2 {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 15px 15px 0px 0px;
+    background: url(/resources/images/dsa_banner.png);
+    background-size: 100%;
+}
+
+.image-course-course3 {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 15px 15px 0px 0px;
+    background: url(/resources/images/dttt1_banner.png);
+    background-size: 100%;
+}
+
+
+.title-course {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.text-course-title {
+    font-family: 'SFPro Bold';
+    font-size: 20px;
+}
+
+.is-premium {
+    height: 18px;
+    padding: 10px;
+}
+
+/* .column-left {
+    margin-right: 10px;
+}
+
+.column-center {
+    margin: 0 10px;
+}
+
+.column-right {
+    margin-left: 10px;
+} */
+
+.about-page .absolute-img {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.about-page .img01 {
+    width: 290px;
+    height: 664px;
+    top: 37%;
+    left: 0;
+}
+
+.about-page .img02 {
+    width: 310px;
+    height: 570px;
+    top: 5%;
+    right: 0;
 }
 
 .banner {
     width: 100%;
+}
+
+.mui-style {
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
 }
 
 #hess-footer {
